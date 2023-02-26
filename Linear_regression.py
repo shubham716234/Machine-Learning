@@ -6,7 +6,7 @@ class Linear_regression:
     def transform(self,X):
         self.p,self.q=X.shape
         X_transform=np.ones((self.p,1))
-        X_transform=np.append(X_transform,X,axis=0);
+        X_transform=np.append(X_transform,X,axis=1);
         return X_transform
     def normalize(self,X):
         X[:,1:]=(X[:,1:]-np.mean(X[:,1:],axis=0))/np.std(X[:,1:],axis=0);
