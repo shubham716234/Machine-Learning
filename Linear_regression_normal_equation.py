@@ -1,8 +1,8 @@
 import numpy as np
 import itertools
 class Linear_regression:
-    def __init__(self,degree):
-        self.degree=degree
+    def __init__(self):
+        pass
     def transform(self,X):
         self.p,self.q=X.shape
         X_transform=np.ones((self.p,1))
